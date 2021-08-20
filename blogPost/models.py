@@ -14,9 +14,9 @@ class Post(models.Model):
     title = models.CharField(max_length=254, null=True, blank=True)
     description = models.CharField(max_length=255, null=True, blank=True)
     content = models.CharField(max_length=255, null=True, blank=True)
-    img = models.ImageField(null=True, upload_to=imageUploadPath, blank=True)
+    #install Pillow for DRF so as to use image field
+    img = models.ImageField(null=True, upload_to=imageUploadPath, blank=True) 
     date_created = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
         return str(self.title)
-
