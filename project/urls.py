@@ -9,9 +9,9 @@ from django.conf.urls.static import static
 #Swagger
 schema_view = get_schema_view(
     openapi.Info(
-        title="Blog Post API",
+        title="Blog Post Api",
         default_version='v1',
-        description="Zuri Internship",
+        description="An Api for blog posts: Zuri internship by Joseph Ayemlo",
         terms_of_service="https://zuri-intern-portfolio-design.herokuapp.com/",
         contact=openapi.Contact(email="ayemlojoseph@gmail.com"),
         license=openapi.License(name="Test License"),

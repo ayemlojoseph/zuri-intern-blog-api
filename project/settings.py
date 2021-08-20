@@ -134,7 +134,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 #heroku for deployment
 django_heroku.settings(locals())
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
